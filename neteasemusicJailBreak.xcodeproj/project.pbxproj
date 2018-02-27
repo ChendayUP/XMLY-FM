@@ -1,0 +1,670 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04B0D820202B081900444824 /* MethodTraceConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04B0D81F202B081900444824 /* MethodTraceConfig.plist */; };
+		04B0D823202B081900444824 /* put ipa or app here in Resources */ = {isa = PBXBuildFile; fileRef = 04B0D822202B081900444824 /* put ipa or app here */; };
+		04B0D82B202B081900444824 /* libneteasemusicJailBreakDylib.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 04B0D82A202B081900444824 /* libneteasemusicJailBreakDylib.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		04B0D830202B081900444824 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04B0D82F202B081900444824 /* JavaScriptCore.framework */; };
+		04B0D832202B081900444824 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04B0D831202B081900444824 /* Foundation.framework */; };
+		04B0D834202B081900444824 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04B0D833202B081900444824 /* UIKit.framework */; };
+		04B0D838202B081900444824 /* ANYMethodLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 04B0D837202B081900444824 /* ANYMethodLog.h */; };
+		04B0D83A202B081900444824 /* ANYMethodLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B0D839202B081900444824 /* ANYMethodLog.m */; };
+		04B0D83C202B081900444824 /* MethodTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = 04B0D83B202B081900444824 /* MethodTrace.h */; };
+		04B0D83E202B081900444824 /* MethodTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B0D83D202B081900444824 /* MethodTrace.m */; };
+		04B0D843202B081900444824 /* AntiAntiDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B0D842202B081900444824 /* AntiAntiDebug.m */; };
+		04B0D846202B081900444824 /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = 04B0D845202B081900444824 /* fishhook.c */; };
+		04B0D848202B081900444824 /* fishhook.h in Headers */ = {isa = PBXBuildFile; fileRef = 04B0D847202B081900444824 /* fishhook.h */; };
+		04B0D84B202B081A00444824 /* neteasemusicJailBreakDylib.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04B0D84A202B081A00444824 /* neteasemusicJailBreakDylib.mm */; };
+		04B0D84D202B081A00444824 /* neteasemusicJailBreakDylib.h in Headers */ = {isa = PBXBuildFile; fileRef = 04B0D84C202B081A00444824 /* neteasemusicJailBreakDylib.h */; };
+		04B0D84F202B081A00444824 /* neteasemusicJailBreakDylib.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B0D84E202B081A00444824 /* neteasemusicJailBreakDylib.m */; };
+		04B0D859202B0C0D00444824 /* Cycript.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04B0D858202B0C0D00444824 /* Cycript.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		04B0D85B202B0C1500444824 /* RevealServer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04B0D85A202B0C1500444824 /* RevealServer.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		04B0D82C202B081900444824 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04B0D811202B081900444824 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04B0D829202B081900444824;
+			remoteInfo = neteasemusicJailBreakDylib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		04B0D819202B081900444824 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				04B0D82B202B081900444824 /* libneteasemusicJailBreakDylib.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		04B0D81C202B081900444824 /* neteasemusicJailBreak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = neteasemusicJailBreak.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04B0D81F202B081900444824 /* MethodTraceConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = MethodTraceConfig.plist; sourceTree = "<group>"; };
+		04B0D822202B081900444824 /* put ipa or app here */ = {isa = PBXFileReference; lastKnownFileType = text; name = "put ipa or app here"; path = "TargetApp/put ipa or app here"; sourceTree = "<group>"; };
+		04B0D824202B081900444824 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04B0D82A202B081900444824 /* libneteasemusicJailBreakDylib.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libneteasemusicJailBreakDylib.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		04B0D82F202B081900444824 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		04B0D831202B081900444824 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		04B0D833202B081900444824 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		04B0D837202B081900444824 /* ANYMethodLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ANYMethodLog.h; path = MethodTrace/ANYMethodLog.h; sourceTree = "<group>"; };
+		04B0D839202B081900444824 /* ANYMethodLog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ANYMethodLog.m; path = MethodTrace/ANYMethodLog.m; sourceTree = "<group>"; };
+		04B0D83B202B081900444824 /* MethodTrace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MethodTrace.h; path = MethodTrace/MethodTrace.h; sourceTree = "<group>"; };
+		04B0D83D202B081900444824 /* MethodTrace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MethodTrace.m; path = MethodTrace/MethodTrace.m; sourceTree = "<group>"; };
+		04B0D840202B081900444824 /* neteasemusicJailBreakDylib-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "neteasemusicJailBreakDylib-Prefix.pch"; sourceTree = "<group>"; };
+		04B0D842202B081900444824 /* AntiAntiDebug.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AntiAntiDebug.m; path = AntiAntiDebug/AntiAntiDebug.m; sourceTree = "<group>"; };
+		04B0D845202B081900444824 /* fishhook.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = fishhook.c; path = fishhook/fishhook.c; sourceTree = "<group>"; };
+		04B0D847202B081900444824 /* fishhook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = fishhook.h; path = fishhook/fishhook.h; sourceTree = "<group>"; };
+		04B0D849202B081900444824 /* neteasemusicJailBreakDylib.xm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; path = neteasemusicJailBreakDylib.xm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		04B0D84A202B081A00444824 /* neteasemusicJailBreakDylib.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = neteasemusicJailBreakDylib.mm; sourceTree = "<group>"; };
+		04B0D84C202B081A00444824 /* neteasemusicJailBreakDylib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = neteasemusicJailBreakDylib.h; sourceTree = "<group>"; };
+		04B0D84E202B081A00444824 /* neteasemusicJailBreakDylib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = neteasemusicJailBreakDylib.m; sourceTree = "<group>"; };
+		04B0D858202B0C0D00444824 /* Cycript.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cycript.framework; path = ../../../../../../opt/MonkeyDev/Librarys/Cycript.framework; sourceTree = "<group>"; };
+		04B0D85A202B0C1500444824 /* RevealServer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RevealServer.framework; path = ../../../../../../opt/MonkeyDev/Frameworks/RevealServer.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04B0D816202B081900444824 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04B0D827202B081900444824 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04B0D830202B081900444824 /* JavaScriptCore.framework in Frameworks */,
+				04B0D859202B0C0D00444824 /* Cycript.framework in Frameworks */,
+				04B0D85B202B0C1500444824 /* RevealServer.framework in Frameworks */,
+				04B0D834202B081900444824 /* UIKit.framework in Frameworks */,
+				04B0D832202B081900444824 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04B0D810202B081900444824 = {
+			isa = PBXGroup;
+			children = (
+				04B0D81E202B081900444824 /* neteasemusicJailBreak */,
+				04B0D835202B081900444824 /* neteasemusicJailBreakDylib */,
+				04B0D82E202B081900444824 /* Frameworks */,
+				04B0D81D202B081900444824 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		04B0D81D202B081900444824 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04B0D81C202B081900444824 /* neteasemusicJailBreak.app */,
+				04B0D82A202B081900444824 /* libneteasemusicJailBreakDylib.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04B0D81E202B081900444824 /* neteasemusicJailBreak */ = {
+			isa = PBXGroup;
+			children = (
+				04B0D81F202B081900444824 /* MethodTraceConfig.plist */,
+				04B0D824202B081900444824 /* Info.plist */,
+				04B0D821202B081900444824 /* TargetApp */,
+			);
+			path = neteasemusicJailBreak;
+			sourceTree = "<group>";
+		};
+		04B0D821202B081900444824 /* TargetApp */ = {
+			isa = PBXGroup;
+			children = (
+				04B0D822202B081900444824 /* put ipa or app here */,
+			);
+			name = TargetApp;
+			sourceTree = "<group>";
+		};
+		04B0D82E202B081900444824 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04B0D85A202B0C1500444824 /* RevealServer.framework */,
+				04B0D858202B0C0D00444824 /* Cycript.framework */,
+				04B0D82F202B081900444824 /* JavaScriptCore.framework */,
+				04B0D831202B081900444824 /* Foundation.framework */,
+				04B0D833202B081900444824 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		04B0D835202B081900444824 /* neteasemusicJailBreakDylib */ = {
+			isa = PBXGroup;
+			children = (
+				04B0D849202B081900444824 /* neteasemusicJailBreakDylib.xm */,
+				04B0D84A202B081A00444824 /* neteasemusicJailBreakDylib.mm */,
+				04B0D84C202B081A00444824 /* neteasemusicJailBreakDylib.h */,
+				04B0D84E202B081A00444824 /* neteasemusicJailBreakDylib.m */,
+				04B0D836202B081900444824 /* MethodTrace */,
+				04B0D841202B081900444824 /* AntiAntiDebug */,
+				04B0D844202B081900444824 /* fishhook */,
+				04B0D83F202B081900444824 /* Supporting Files */,
+			);
+			path = neteasemusicJailBreakDylib;
+			sourceTree = "<group>";
+		};
+		04B0D836202B081900444824 /* MethodTrace */ = {
+			isa = PBXGroup;
+			children = (
+				04B0D837202B081900444824 /* ANYMethodLog.h */,
+				04B0D839202B081900444824 /* ANYMethodLog.m */,
+				04B0D83B202B081900444824 /* MethodTrace.h */,
+				04B0D83D202B081900444824 /* MethodTrace.m */,
+			);
+			name = MethodTrace;
+			sourceTree = "<group>";
+		};
+		04B0D83F202B081900444824 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				04B0D840202B081900444824 /* neteasemusicJailBreakDylib-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		04B0D841202B081900444824 /* AntiAntiDebug */ = {
+			isa = PBXGroup;
+			children = (
+				04B0D842202B081900444824 /* AntiAntiDebug.m */,
+			);
+			name = AntiAntiDebug;
+			sourceTree = "<group>";
+		};
+		04B0D844202B081900444824 /* fishhook */ = {
+			isa = PBXGroup;
+			children = (
+				04B0D845202B081900444824 /* fishhook.c */,
+				04B0D847202B081900444824 /* fishhook.h */,
+			);
+			name = fishhook;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		04B0D828202B081900444824 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04B0D838202B081900444824 /* ANYMethodLog.h in Headers */,
+				04B0D84D202B081A00444824 /* neteasemusicJailBreakDylib.h in Headers */,
+				04B0D83C202B081900444824 /* MethodTrace.h in Headers */,
+				04B0D848202B081900444824 /* fishhook.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		04B0D81B202B081900444824 /* neteasemusicJailBreak */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04B0D855202B081A00444824 /* Build configuration list for PBXNativeTarget "neteasemusicJailBreak" */;
+			buildPhases = (
+				04B0D815202B081900444824 /* Sources */,
+				04B0D816202B081900444824 /* Frameworks */,
+				04B0D817202B081900444824 /* ShellScript */,
+				04B0D818202B081900444824 /* Resources */,
+				04B0D819202B081900444824 /* CopyFiles */,
+				04B0D81A202B081900444824 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04B0D82D202B081900444824 /* PBXTargetDependency */,
+			);
+			name = neteasemusicJailBreak;
+			productName = neteasemusicJailBreak;
+			productReference = 04B0D81C202B081900444824 /* neteasemusicJailBreak.app */;
+			productType = "com.apple.product-type.application";
+		};
+		04B0D829202B081900444824 /* neteasemusicJailBreakDylib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04B0D852202B081A00444824 /* Build configuration list for PBXNativeTarget "neteasemusicJailBreakDylib" */;
+			buildPhases = (
+				04B0D825202B081900444824 /* ShellScript */,
+				04B0D826202B081900444824 /* Sources */,
+				04B0D827202B081900444824 /* Frameworks */,
+				04B0D828202B081900444824 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = neteasemusicJailBreakDylib;
+			productName = neteasemusicJailBreakDylib;
+			productReference = 04B0D82A202B081900444824 /* libneteasemusicJailBreakDylib.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04B0D811202B081900444824 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = com.jailbreak;
+				TargetAttributes = {
+					04B0D81B202B081900444824 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					04B0D829202B081900444824 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 04B0D814202B081900444824 /* Build configuration list for PBXProject "neteasemusicJailBreak" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 04B0D810202B081900444824;
+			productRefGroup = 04B0D81D202B081900444824 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04B0D81B202B081900444824 /* neteasemusicJailBreak */,
+				04B0D829202B081900444824 /* neteasemusicJailBreakDylib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04B0D818202B081900444824 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04B0D823202B081900444824 /* put ipa or app here in Resources */,
+				04B0D820202B081900444824 /* MethodTraceConfig.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		04B0D817202B081900444824 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = /opt/MonkeyDev/Tools/pack.sh;
+		};
+		04B0D81A202B081900444824 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/Tools/pack.sh codesign";
+		};
+		04B0D825202B081900444824 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/bin/md --xcbp-logos";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04B0D815202B081900444824 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04B0D826202B081900444824 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04B0D84F202B081A00444824 /* neteasemusicJailBreakDylib.m in Sources */,
+				04B0D843202B081900444824 /* AntiAntiDebug.m in Sources */,
+				04B0D84B202B081A00444824 /* neteasemusicJailBreakDylib.mm in Sources */,
+				04B0D83E202B081900444824 /* MethodTrace.m in Sources */,
+				04B0D846202B081900444824 /* fishhook.c in Sources */,
+				04B0D83A202B081900444824 /* ANYMethodLog.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		04B0D82D202B081900444824 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04B0D829202B081900444824 /* neteasemusicJailBreakDylib */;
+			targetProxy = 04B0D82C202B081900444824 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		04B0D850202B081A00444824 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		04B0D851202B081A00444824 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04B0D853202B081A00444824 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HVV5LMXSM3;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+					/opt/MonkeyDev/Librarys,
+					/opt/MonkeyDev/Frameworks,
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "neteasemusicJailBreakDylib/neteasemusicJailBreakDylib-Prefix.pch";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/neteasemusicJailBreak/Info.plist";
+				INSTALL_PATH = "@executable_path/Frameworks/libneteasemusicJailBreakDylib.dylib";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"neteasemusicJailBreakDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+					"-lsubstrate",
+					"-framework",
+					Cycript,
+					"-framework",
+					RevealServer,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = aaa;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		04B0D854202B081A00444824 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = HVV5LMXSM3;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+					/opt/MonkeyDev/Librarys,
+					/opt/MonkeyDev/Frameworks,
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "neteasemusicJailBreakDylib/neteasemusicJailBreakDylib-Prefix.pch";
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/neteasemusicJailBreak/Info.plist";
+				INSTALL_PATH = "@executable_path/Frameworks/libneteasemusicJailBreakDylib.dylib";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"neteasemusicJailBreakDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+					"-lsubstrate",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = aaa;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		04B0D856202B081A00444824 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HVV5LMXSM3;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = neteasemusicJailBreak/Info.plist;
+				MONKEYDEV_CLASS_DUMP = NO;
+				MONKEYDEV_RESTORE_SYMBOL = NO;
+				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = aaa;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		04B0D857202B081A00444824 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HVV5LMXSM3;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = neteasemusicJailBreak/Info.plist;
+				MONKEYDEV_CLASS_DUMP = NO;
+				MONKEYDEV_RESTORE_SYMBOL = NO;
+				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = aaa;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04B0D814202B081900444824 /* Build configuration list for PBXProject "neteasemusicJailBreak" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04B0D850202B081A00444824 /* Debug */,
+				04B0D851202B081A00444824 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04B0D852202B081A00444824 /* Build configuration list for PBXNativeTarget "neteasemusicJailBreakDylib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04B0D853202B081A00444824 /* Debug */,
+				04B0D854202B081A00444824 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04B0D855202B081A00444824 /* Build configuration list for PBXNativeTarget "neteasemusicJailBreak" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04B0D856202B081A00444824 /* Debug */,
+				04B0D857202B081A00444824 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04B0D811202B081900444824 /* Project object */;
+}
