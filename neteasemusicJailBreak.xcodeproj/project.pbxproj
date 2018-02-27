@@ -25,6 +25,7 @@
 		04B0D84F202B081A00444824 /* neteasemusicJailBreakDylib.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B0D84E202B081A00444824 /* neteasemusicJailBreakDylib.m */; };
 		04B0D859202B0C0D00444824 /* Cycript.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04B0D858202B0C0D00444824 /* Cycript.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		04B0D85B202B0C1500444824 /* RevealServer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04B0D85A202B0C1500444824 /* RevealServer.framework */; };
+		04D63B1F20454F1C00D982D3 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 04D63B1E20454F1C00D982D3 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		04B0D84E202B081A00444824 /* neteasemusicJailBreakDylib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = neteasemusicJailBreakDylib.m; sourceTree = "<group>"; };
 		04B0D858202B0C0D00444824 /* Cycript.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cycript.framework; path = ../../../../../../opt/MonkeyDev/Librarys/Cycript.framework; sourceTree = "<group>"; };
 		04B0D85A202B0C1500444824 /* RevealServer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RevealServer.framework; path = ../../../../../../opt/MonkeyDev/Frameworks/RevealServer.framework; sourceTree = "<group>"; };
+		04D63B1E20454F1C00D982D3 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 		04B0D810202B081900444824 = {
 			isa = PBXGroup;
 			children = (
+				04D63B1E20454F1C00D982D3 /* README.md */,
 				04B0D81E202B081900444824 /* neteasemusicJailBreak */,
 				04B0D835202B081900444824 /* neteasemusicJailBreakDylib */,
 				04B0D82E202B081900444824 /* Frameworks */,
@@ -296,6 +299,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04D63B1F20454F1C00D982D3 /* README.md in Resources */,
 				04B0D823202B081900444824 /* put ipa or app here in Resources */,
 				04B0D820202B081900444824 /* MethodTraceConfig.plist in Resources */,
 			);
